@@ -12,6 +12,7 @@
     --modal-overlay: #2E2F42;
     --hero-background: #2E2F42;
     --white: #ffffff;
+    --customer-gray: #AFB1B8;
 }
 
 *::before,
@@ -363,6 +364,11 @@ height: 100%;
     
 }
 
+.description-div-svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 /*команда*/
 .our-team {
     display: flex;
@@ -428,11 +434,19 @@ height: 100%;
     font-weight: 500;
     margin-bottom: 16px;}
 
-.socials{}
+.socials{display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
 
 .social-list{}
 
-.social-link{}
+.social-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .social-svg{width: 64px;
     height: 64px;}
@@ -442,14 +456,55 @@ height: 100%;
     gap: 16px;
 }
     
-.social-list-footer {width: 64px;
-    height: 64px;}
+.social-list-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;}
     
 .social-link-footer {
+}
+    
+.social-svg-footer {
+    width: 24px;
+    height: 24px;
+    fill: var(--light);}
+
+.social-svg-footer-div{
+
+}
+
+.social-list-footer:hover .social-svg-footer{
+
+}
+.description-div-svg{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-    
-.social-svg-footer {width: 40px;
-    height: 40px;}
+.social-svg-team{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    fill: var(--brand-color);
+
+}
+.customer-svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 104px;
+    height: 56px;
+    fill: var(--customer-gray);
+}
+
+.customers-ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
