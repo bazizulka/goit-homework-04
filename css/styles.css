@@ -328,9 +328,10 @@ span {
     overflow: hidden;
 }
 .description-list{
-margin-right: 24px;
-width: 100%;
-height: 100%;
+    margin-right: 24px;
+    width: 100%;
+    height: 100%;
+
 }
 .description-list:last-child {
     margin-right: 0;
@@ -361,13 +362,18 @@ height: 100%;
     border-left: solid;
     border-bottom: solid;
     color: var(--accent);
-    
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: var(--light);
 }
 
 .description-div-svg {
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: var(--light);
 }
 /*команда*/
 .our-team {
@@ -465,6 +471,10 @@ height: 100%;
     display: flex;
     gap: 16px;
 }
+.socials {
+    display: flex;
+    gap: 24px;
+}
     
 .social-list-footer {
     display: flex;
@@ -529,6 +539,8 @@ height: 100%;
 .customer-li {
     border: 1px solid #8E8F99;
     border-radius: 4px;
+    margin-right: 24px;
+    margin-bottom: 120px;
 }
 .social-list:hover{
     background-color: var(--pressed-state);
