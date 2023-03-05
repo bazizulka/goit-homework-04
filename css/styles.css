@@ -220,7 +220,9 @@ span {
     line-height: 1.5;
     font-weight: 500;
     font-family: inherit;
-    box-shadow: 5px 5px #f71f0214;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 2px 1px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .nav-button-li {
     margin-right: 24px;
@@ -281,12 +283,11 @@ span {
 
 
 .album-link{
-    border: 1px solid var(--accent);
+    display: block;
 
 }
-.album-link:hover {
-    display: block;
-    border: 1px solid var(--light);
+.album-link:hover
+.album-link:focus {
     box-shadow:
         0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
@@ -297,6 +298,7 @@ span {
     font-style: normal;
     align-items: center;
     justify-content: flex-end;
+    margin: 0 auto;
 }
 
 .contacts {
@@ -351,9 +353,7 @@ span {
 .description-list:last-child {
     margin-right: 0;
 }
-.description-link {
-    padding-bottom: 8px;
-}
+
 .description {
     color: var(--text);
     font-size: 16px;
@@ -380,11 +380,9 @@ span {
     border-left: solid;
     border-bottom: solid;
     color: var(--accent);
-    border: 1px solid var(--accent);
     border-radius: 4px;
     background-color: var(--white);
-    width: 264px;
-    height: 112px;
+    border: 1px solid var(--accent);
 }
 
 .description-div-svg {
@@ -394,6 +392,8 @@ span {
     border: 1px solid transparent;
     border-radius: 4px;
     background-color: var(--light);
+    width: 264px;
+    height: 112px;
 }
 /*команда*/
 .our-team {
@@ -413,7 +413,7 @@ span {
     font-size: 20px;
     line-height: 1.2;
     text-align: center;
-    padding-bottom: 8px;
+    margin-bottom: 8px;
 
 }
 .team-members-class{
@@ -431,6 +431,7 @@ span {
     font-size: 16px;
     line-height: 1.5;
     text-align: center;
+    margin-bottom: 8px;
 }
 .member-div {
     padding-top: 32px;
@@ -474,34 +475,17 @@ span {
     width: 100%;
     height: 100%;
 }
-.social-link:hover {
+.social-link:hover
+.social-link:focus {
     background-color: var(--pressed-state);
 }
 
-.socials-ul-footer {display: flex;
-    align-items: center;
-    justify-content: center;
-}
 .socials {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 24px;
 }
-    
-.social-li-footer {
-    width: 40px;
-    height: 40px;
-    margin-right: 16px;}
-    
-.social-li-footer:last-child{
-    margin-right: 0px;
-}
-    
-.social-svg-footer {
-    width: 24px;
-    height: 24px;
-    fill: var(--light);}
 
 
 .social-svg-team{
@@ -534,7 +518,8 @@ span {
 }
 .customer-link:hover
 .customer-link:focus {
-    border: 1px solid #404BBF;
+    border-color: var(--pressed-state);
+    fill: #404BBF;
 }
 .customer-svg {
     display: flex;
@@ -543,9 +528,6 @@ span {
     width: 104px;
     height: 56px;
     fill: var(--customer-gray);
-}
-.customer-svg:hover{
-    fill: #404BBF;
 }
 
 .customer-li {
@@ -557,12 +539,26 @@ span {
 .customer-li:last-child{
     margin-right: 0px;
 }
-.customer-li:hover{
-    border-radius: 4px;
-    border: 1px solid #404BBF;}
 
-.social-link-footer{
+.socials-ul-footer {
     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social-list-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
+}
+
+.social-list-footer:last-child {
+    margin-right: 0px;
+}
+
+.social-link-footer{display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
@@ -570,6 +566,17 @@ span {
     height: 100%;
     background-color: rgba(255, 255, 255, 0.1);
 }
-.social-link-footer:hover {
+.social-link-footer:hover
+.social-link-footer:focus {
     background-color: #31D0AA;
+}
+
+
+.social-svg-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    fill: var(--light);
 }
