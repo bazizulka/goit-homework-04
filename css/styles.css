@@ -513,8 +513,6 @@ span {
     justify-content: center;
     width: 100%;
     height: 100%;
-    border: 1px solid #8E8F99;
-    border-radius: 4px;
 }
 .customer-link:hover .customer-svg,
 .customer-link:focus  {
@@ -534,10 +532,16 @@ span {
     width: 168px;
     height: 88px;
     margin-right: 24px;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
 
 }
 .customer-li:last-child{
     margin-right: 0px;
+}
+.customer-li:hover,
+.customer-li:focus {
+    border-color: var(--pressed-state);
 }
 
 .socials-ul-footer {
