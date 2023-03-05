@@ -516,8 +516,8 @@ span {
     border: 1px solid #8E8F99;
     border-radius: 4px;
 }
-.customer-link:hover,
-.customer-link:focus {
+.customer-link:hover .customer-svg,
+.customer-link:focus  {
     border-color: var(--pressed-state);
     fill: #404BBF;
 }
